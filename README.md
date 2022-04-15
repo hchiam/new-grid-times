@@ -4,6 +4,8 @@ In this workshop, our goal is to build a sophisticated, responsive grid layout f
 
 ![Desktop-sized mockup](/docs/desktop-mockup.png)
 
+Figma link: https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 ## Code structure
 
 Like the last few workshops, this is a React / styled-components application.
@@ -104,7 +106,7 @@ This same layout is used on laptop, but not on tablet. Update it across all rele
 
 Alright, time to create our first responsive grid!
 
-Update the `MainStoryGrid` component to support the layouts shown in Figma for tablet and laptop.
+Update the `MainStoryGrid` component to support the layouts shown in [Figma](https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times) for tablet and laptop.
 
 There are some interesting details that are easy to miss:
 
