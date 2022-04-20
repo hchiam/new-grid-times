@@ -54,6 +54,8 @@ The data for the stories is held in a JS file, `src/data.js`. In a real app, thi
 
 ## Exercise 1: Header
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 Like in the Sole&Ankle workshop, this workshop features a two-step header that changes between desktop and mobile.
 
 This workshop has been created with a "Mobile-first" methodology, and so your goal this time is to create a desktop variant of the header, and ensure the right header is used at both viewport sizes.
@@ -64,11 +66,15 @@ This workshop has been created with a "Mobile-first" methodology, and so your go
 
 ## Exercise 2: Prep and Polish
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 Before we start working on the tablet and laptop grid layouts, we need to add a bit of missing polish to the mobile implementation, and prep certain elements to make it easier to create our tablet/laptop grids.
 
 This exercise is split into a few mini-parts:
 
 ### Text truncation
+
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
 
 In the mockup, our main story's preview text is truncated on mobile after 8 lines of text:
 
@@ -84,6 +90,8 @@ The syntax for multi-line ellipsis is difficult to remember, so you might wish t
 
 ### Story borders
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 There are also dividers between the stories that are in lists, like the secondary and opinion stories:
 
 ![Close-up showing the thin dividers between stories on mobile](/docs/dividers.png)
@@ -93,6 +101,8 @@ Critically, the borders only run _between_ stories. Not above the top story, or 
 A good place to start is in `MainStoryGrid.js`. That's where all of these stories are laid out.
 
 ### Opinion avatar placement
+
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
 
 Opinion stories show a picture of the journalist. On mobile, this image is meant to be shifted off to the side:
 
@@ -104,6 +114,8 @@ This same layout is used on laptop, but not on tablet. Update it across all rele
 
 ## Exercise 3: Main story grid
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 Alright, time to create our first responsive grid!
 
 Update the `MainStoryGrid` component to support the layouts shown in [Figma](https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times) for tablet and laptop.
@@ -111,6 +123,8 @@ Update the `MainStoryGrid` component to support the layouts shown in [Figma](htt
 There are some interesting details that are easy to miss:
 
 ### Swapped OpinionStory styles
+
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
 
 In the last exercise, we updated our "Opinion" stories so that the avatar was shifted off to the side on mobile and laptop sizes.
 
@@ -124,6 +138,8 @@ We'll need to dip into `OpinionStory.js` and make some changes based on the view
 
 ### Swapped SecondaryStory styles
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 Similarly, on tablet, our `SecondaryStory` switches to a new layout.
 
 On mobile/laptop:
@@ -136,6 +152,8 @@ On tablet:
 
 ### Grid dividers
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 When our grid grows to have multiple columns, we want to add a thin grey line between the columns:
 
 ![Highlighted screenshot of the dividers between rows and columns on the desktop grid](/docs/desktop-dividers.png)
@@ -144,11 +162,15 @@ We discuss strategies for this situation in the [“Grid Dividers” lesson](htt
 
 ### Optional: Optical alignment
 
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
+
 After creating the grid, you may find that certain things don't sit completely right. Compare the output to the design, and look for opportunities to shift things around to match a bit more perfectly.
 
 ---
 
 ## Exercise 4: Specialty Story grid
+
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
 
 Underneath the main grid we've been working on, we have another grid, with specialized items about markets and sports.
 
@@ -165,6 +187,8 @@ Finally, on large viewports, we want the market and sports sections to sit side-
 ---
 
 ## Exercise 5: Footer
+
+https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?node-id=0%3A1
 
 Last but not least, the footer!
 
