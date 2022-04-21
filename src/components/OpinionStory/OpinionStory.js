@@ -1,15 +1,16 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from "react";
+import styled from "styled-components/macro";
+import { QUERIES } from "../../constants";
 
 const OpinionStory = ({ id, title, author, avatar }) => {
   return (
     <a href={`/story/${id}`}>
       <Wrapper>
         <Avatar alt="" src={avatar} />
-        <div>
+        <InfoWrapper>
           <AuthorName>{author}</AuthorName>
           <ArticleTitle>{title}</ArticleTitle>
-        </div>
+        </InfoWrapper>
       </Wrapper>
     </a>
   );
@@ -17,6 +18,16 @@ const OpinionStory = ({ id, title, author, avatar }) => {
 
 const Wrapper = styled.article`
   color: var(--color-gray-900);
+  grid-template: "InfoWrapper Avatar";
+  grid-template-columns: 1fr auto;
+
+  display: grid;
+  @media ${QUERIES.tabletAndUp} {
+    display: revert;
+  }
+  @media ${QUERIES.laptopAndUp} {
+    display: grid;
+  }
 `;
 
 const Avatar = styled.img`
@@ -25,6 +36,19 @@ const Avatar = styled.img`
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  grid-area: Avatar;
+
+  margin-left: 1rem;
+  @media ${QUERIES.tabletAndUp} {
+    margin-left: revert;
+  }
+  @media ${QUERIES.laptopAndUp} {
+    margin-left: 1rem;
+  }
+`;
+
+const InfoWrapper = styled.div`
+  grid-area: InfoWrapper;
 `;
 
 const AuthorName = styled.p`
