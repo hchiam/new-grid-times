@@ -66,6 +66,17 @@ const SecondaryStorySection = styled.section`
 const StoryList = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 1px;
+  background: var(--color-gray-300);
+  > * {
+    background: var(--color-gray-100);
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+    }
+    &:not(:first-child) {
+      padding-top: 1rem;
+    }
+  }
 `;
 
 const OpinionSection = styled.section`
